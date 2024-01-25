@@ -1,6 +1,9 @@
 pipeline {
     agent { node {label 'agent-1'} }
-    enviromnemt {
+    options{
+        timeout(time: 1, unit: 'HOURS')
+    }
+    environmemt {
         USER = 'rajkumar'
     }
 
