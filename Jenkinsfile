@@ -38,7 +38,7 @@ pipeline {
         }
           stage('when_test') {
             when{
-                branch "main"
+                branch "*/main"
             }
             steps {
                 echo 'tested when condition....'
