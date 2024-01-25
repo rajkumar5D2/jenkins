@@ -13,6 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing-222..'
+                sh 'printenv'
             }
         }
         stage('Deploy') {
