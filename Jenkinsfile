@@ -8,16 +8,16 @@ pipeline {
     }
  
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building-111..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing-222..'
-                      }
-        }
+        // stage('Build') {
+        //     steps {
+        //         echo 'Building-111..'
+        //     }
+        // }
+        // stage('Test') {
+        //     steps {
+        //         echo 'Testing-222..'
+        //               }
+        // }
         stage('Example') {
         input {
             message "Should we continue?"
