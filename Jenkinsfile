@@ -30,6 +30,11 @@ pipeline {
                 sh 'printenv'
             }
         }
+         stage('params') {
+            steps {
+             echo "${params.PERSON}"
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
