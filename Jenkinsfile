@@ -36,14 +36,7 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-          stage('when_test') {
-            when{
-                branch "*/main"
-            }
-            steps {
-                echo 'tested when condition....'
-            }
-        }
+       
     }
     post{
         always{
